@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "orionapplepie_brain_games"
-version = "0.1.1"
+version = "0.2.1"
 description = "Just simple console games"
 authors = ["Александр Тен <orionapplepie@gmail.com>"]
 packages = [
@@ -12,6 +12,7 @@ brain-games = "brain_games.scripts.brain_games:main"
 
 [tool.poetry.dependencies]
 python = "^3.6"
+prompt = "^0.4.1"
 
 [tool.poetry.dev-dependencies]
 
