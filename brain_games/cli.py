@@ -4,6 +4,7 @@ import prompt
 GAME_ROUNDS = 3
 MAX_NUMBER = 100
 MAX_PROGRESSION_NUMBER = 10
+MAX_NUMBER_FOR_PRIMES = 5000
 
 
 def conversation(rules=None):

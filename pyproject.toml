@@ -1,11 +1,17 @@
 [tool.poetry]
 name = "orionapplepie_brain_games"
-version = "0.6.1"
+version = "0.7.0"
 description = "Just simple console games"
 authors = ["Александр Тен <orionapplepie@gmail.com>"]
 packages = [
   { include = "brain_games"},
 ]
+
+classifiers = [
+    "Topic :: Games/Entertainment :: Puzzle Games",
+]
+
+repository = "https://github.com/OrionApplePie/project-lvl1-s566"
 
 [tool.poetry.scripts]
 brain-games = "brain_games.scripts.brain_games:main"
@@ -13,6 +19,7 @@ brain-even = "brain_games.scripts.brain_even:main"
 brain-calc = "brain_games.scripts.brain_calc:main"
 brain-gcd = "brain_games.scripts.brain_gcd:main"
 brain-progression = "brain_games.scripts.brain_progression:main"
+brain-prime = "brain_games.scripts.brain_prime:main"
 
 [tool.poetry.dependencies]
 python = "^3.6"
