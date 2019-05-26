@@ -1,10 +1,9 @@
 #!/usr/bin/env python3
-from ..cli import run
+from ..cli import conversation
 
 
 def main():
-    print("Welcome to the Brain Games!")
-    run()
+    conversation()
 
 
 if __name__ == "__main__":
