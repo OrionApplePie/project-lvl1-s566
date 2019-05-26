@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-from ..games.brain_even_game import print_rules, game
+from ..games.brain_calc_game import print_rules, game
 from ..cli import run
 
 
