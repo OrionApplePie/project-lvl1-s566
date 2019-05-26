@@ -14,3 +14,8 @@
 ## Шаг 4
 
 [![asciicast](https://asciinema.org/a/4QZBJW8Y9HvJFPccntkPxh9JM.svg)](https://asciinema.org/a/4QZBJW8Y9HvJFPccntkPxh9JM)
+
+
+## Шаг 5
+
+[![asciicast](https://asciinema.org/a/CTvRtbaXRuy3AysIPfsLQxgga.svg)](https://asciinema.org/a/CTvRtbaXRuy3AysIPfsLQxgga)
