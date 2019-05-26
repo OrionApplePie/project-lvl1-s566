@@ -3,6 +3,7 @@ import prompt
 
 GAME_ROUNDS = 3
 MAX_NUMBER = 100
+MAX_PROGRESSION_NUMBER = 10
 
 
 def conversation(rules=None):
