@@ -5,10 +5,10 @@ from ..cli import game_flow, MAX_NUMBER
 RULES = 'Find the greatest common divisor of given numbers.\n'
 
 
-def GCD(x, y): 
+def GCD(x, y):
     while(y):
-        x, y = y, x % y 
-    return x 
+        x, y = y, x % y
+    return x
 
 
 def question_generator():
