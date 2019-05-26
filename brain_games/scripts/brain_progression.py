@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-from ..games.brain_progression import game
+from ..games.brain_progression_game import game
 
 
 def main():
