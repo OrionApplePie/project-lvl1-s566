@@ -11,7 +11,6 @@
 [![asciicast](https://asciinema.org/a/ctGUgTGkfzPLJvW5GMQ51PhD6.svg)](https://asciinema.org/a/ctGUgTGkfzPLJvW5GMQ51PhD6)
 
 
-## Шаг 2
+## Шаг 4
 
-
-## Шаг 3
+[![asciicast](https://asciinema.org/a/4QZBJW8Y9HvJFPccntkPxh9JM.svg)](https://asciinema.org/a/4QZBJW8Y9HvJFPccntkPxh9JM)
