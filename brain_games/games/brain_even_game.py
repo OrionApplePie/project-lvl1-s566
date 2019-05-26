@@ -2,7 +2,6 @@ import prompt
 import random
 
 
-
 GAME_ROUNDS = 3
 MAX_NUMBER = 100
 
@@ -21,14 +20,17 @@ def game(name):
 
         print('Question: {0}'.format(number))
         answer = prompt.string('Your answer: ')
-        
+
         if answer == correct_answer:
             print('Correct!')
             score += 1
         else:
-            print("'{0}' is wrong answer ;(. Correct answer was '{1}'.".format(answer, correct_answer))
+            print(
+                ("'{0}' is wrong answer ;(."
+                 "Correct answer was '{1}'.".format(answer, correct_answer))
+            )
             print("Let's try again, {0}!".format(name))
             break
-    
+
     if score == GAME_ROUNDS:
         print('Congratulations, {0}!'.format(name))
