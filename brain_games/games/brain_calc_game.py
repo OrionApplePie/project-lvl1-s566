@@ -9,7 +9,7 @@ RULES = 'What is the result of the expression?\n'
 def question_generator():
     ops = {
         '+': operator.add,
-        '-': operator.sub, 
+        '-': operator.sub,
         '*': operator.mul
     }
     number1 = random.randint(0, MAX_NUMBER)
@@ -23,7 +23,7 @@ def question_generator():
 
     return {
         'question': question,
-        'answer': correct_answer 
+        'answer': correct_answer
     }
 
 

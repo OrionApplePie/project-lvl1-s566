@@ -10,7 +10,7 @@ def question_generator():
     correct_answer = 'yes' if number % 2 == 0 else 'no'
     return {
         'question': str(number),
-        'answer': correct_answer 
+        'answer': correct_answer
     }
 
 
