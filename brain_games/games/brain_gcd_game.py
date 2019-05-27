@@ -5,7 +5,7 @@ from ..cli import game_flow, MAX_NUMBER
 RULES = 'Find the greatest common divisor of given numbers.\n'
 
 
-def GCD(x, y):
+def gcd(x, y):
     while(y):
         x, y = y, x % y
     return x
@@ -16,7 +16,7 @@ def question_generator():
     number2 = random.randint(0, MAX_NUMBER)
 
     question = 'Question: {0} {1}'.format(number1, number2)
-    correct_answer = str(GCD(number1, number2))
+    correct_answer = str(gcd(number1, number2))
 
     return {
         'question': question,

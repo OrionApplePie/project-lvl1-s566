@@ -1,5 +1,5 @@
 import random
-from ..cli import game_flow, MAX_NUMBER_FOR_PRIMES
+from ..cli import game_flow, NUMBERS_FOR_PRIMES_COUNT
 
 
 RULES = 'Answer "yes" if given number is prime. Otherwise answer "no".\n'
@@ -13,7 +13,7 @@ def is_prime(n):
 
 
 def question_generator():
-    number = random.randint(2, MAX_NUMBER_FOR_PRIMES)
+    number = random.randint(2, NUMBERS_FOR_PRIMES_COUNT)
     question = 'Question: {0}'.format(number)
     correct_answer = 'yes' if is_prime(number) else 'no'
 

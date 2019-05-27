@@ -1,10 +1,10 @@
 import prompt
 
 
-GAME_ROUNDS = 3
+ROUNDS_COUNT = 3
 MAX_NUMBER = 100
-MAX_PROGRESSION_NUMBERS = 10
-MAX_NUMBER_FOR_PRIMES = 5000
+PROGRESSION_NUMBERS_COUNT = 10
+NUMBERS_FOR_PRIMES_COUNT = 5000
 
 
 def conversation(rules=None):
@@ -25,7 +25,7 @@ def game_flow(rules, question_generator):
     def game():
         user_name = conversation(rules)
         score = 0
-        for _ in range(GAME_ROUNDS):
+        for _ in range(ROUNDS_COUNT):
             question, correct_answer = question_generator().values()
             print('Question: {0}'.format(question))
             user_answer = prompt.string('Your answer: ')
@@ -42,6 +42,6 @@ def game_flow(rules, question_generator):
                 print("Let's try again, {0}!".format(user_name))
                 break
 
-        if score == GAME_ROUNDS:
+        if score == ROUNDS_COUNT:
             print('Congratulations, {0}!'.format(user_name))
     return game

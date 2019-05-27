@@ -1,16 +1,16 @@
 import random
-from ..cli import game_flow, MAX_PROGRESSION_NUMBERS
+from ..cli import game_flow, PROGRESSION_NUMBERS_COUNT
 
 
 RULES = 'What number is missing in the progression?.\n'
 
 
 def question_generator():
-    start = random.randint(0, MAX_PROGRESSION_NUMBERS)
-    step = random.randint(1, MAX_PROGRESSION_NUMBERS)
-    end = start + step * MAX_PROGRESSION_NUMBERS
+    start = random.randint(0, PROGRESSION_NUMBERS_COUNT)
+    step = random.randint(1, PROGRESSION_NUMBERS_COUNT)
+    end = start + step * PROGRESSION_NUMBERS_COUNT
 
-    hidden_number_index = random.randint(0, MAX_PROGRESSION_NUMBERS - 1)
+    hidden_number_index = random.randint(0, PROGRESSION_NUMBERS_COUNT - 1)
 
     progression = list(range(start, end, step))
     correct_answer = str(progression[hidden_number_index])
