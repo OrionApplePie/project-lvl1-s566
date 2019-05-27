@@ -10,12 +10,11 @@ def question_generator():
     step = random.randint(1, PROGRESSION_NUMBERS_COUNT)
     end = start + step * PROGRESSION_NUMBERS_COUNT
 
-    hidden_number_index = random.randint(0, PROGRESSION_NUMBERS_COUNT - 1)
-
     progression = list(range(start, end, step))
+    hidden_number_index = random.randint(0, PROGRESSION_NUMBERS_COUNT - 1)
     correct_answer = str(progression[hidden_number_index])
-    progression[hidden_number_index] = '..'
 
+    progression[hidden_number_index] = '..'
     progression_string = ' '.join(map(str, progression))
     question = 'Question: {0}'.format(progression_string)
 

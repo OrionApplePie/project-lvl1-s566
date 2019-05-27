@@ -16,8 +16,8 @@ def question_generator():
     number2 = random.randint(0, MAX_NUMBER)
 
     op = random.choice(list(OPS.keys()))
-    expr = '{0} {1} {2}'.format(number1, op, number2)
-    question = 'Question: {0}'.format(expr)
+
+    question = 'Question: {0} {1} {2}'.format(number1, op, number2)
     correct_answer = str(OPS[op](number1, number2))
 
     return {
