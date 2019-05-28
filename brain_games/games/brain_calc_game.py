@@ -1,6 +1,6 @@
 import operator
 import random
-from ..cli import game_flow, MAX_NUMBER
+from brain_games.cli import game_flow, MAX_NUMBER
 
 
 RULES = 'What is the result of the expression?\n'

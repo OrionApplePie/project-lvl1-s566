@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-from ..cli import conversation
+from brain_games.cli import conversation
 
 
 def main():

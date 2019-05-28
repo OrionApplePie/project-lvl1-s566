@@ -14,7 +14,6 @@ def conversation(rules=None):
         print(rules)
     else:
         print('\n')
-
     user_name = prompt.string('May I have your name? ')
     print('Hello, {0}!\n'.format(user_name))
     return user_name
@@ -29,7 +28,6 @@ def game_flow(rules, question_generator):
             question, correct_answer = question_generator().values()
             print('Question: {0}'.format(question))
             user_answer = prompt.string('Your answer: ')
-
             if user_answer == correct_answer:
                 print('Correct!')
                 score += 1

@@ -1,5 +1,5 @@
 import random
-from ..cli import game_flow, MAX_NUMBER
+from brain_games.cli import game_flow, MAX_NUMBER
 
 
 RULES = 'Answer "yes" if number even otherwise answer "no".\n'

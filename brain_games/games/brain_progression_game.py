@@ -1,5 +1,5 @@
 import random
-from ..cli import game_flow, PROGRESSION_NUMBERS_COUNT
+from brain_games.cli import game_flow, PROGRESSION_NUMBERS_COUNT
 
 
 RULES = 'What number is missing in the progression?.\n'
