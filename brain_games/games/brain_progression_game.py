@@ -15,9 +15,7 @@ def question_generator():
     correct_answer = str(progression[hidden_number_index])
 
     progression[hidden_number_index] = '..'
-    progression_string = ' '.join(map(str, progression))
-    question = 'Question: {0}'.format(progression_string)
-
+    question = ' '.join(map(str, progression))
     return {
         'question': question,
         'answer': correct_answer
