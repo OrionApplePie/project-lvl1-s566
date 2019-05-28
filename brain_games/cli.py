@@ -25,7 +25,8 @@ def game_flow(rules, question_generator):
         user_name = conversation(rules)
         score = 0
         for _ in range(ROUNDS_COUNT):
-            question, correct_answer = question_generator().values()
+            question = question_generator['question']
+            correct_answer = question_generator['correct_answer']
             print('Question: {0}'.format(question))
             user_answer = prompt.string('Your answer: ')
             if user_answer == correct_answer:

@@ -20,7 +20,7 @@ def question_generator():
 
     return {
         'question': question,
-        'answer': correct_answer
+        'correct_answer': correct_answer
     }
 
 

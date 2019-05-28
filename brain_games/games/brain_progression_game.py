@@ -18,7 +18,7 @@ def question_generator():
     question = ' '.join(map(str, progression))
     return {
         'question': question,
-        'answer': correct_answer
+        'correct_answer': correct_answer
     }
 
 
