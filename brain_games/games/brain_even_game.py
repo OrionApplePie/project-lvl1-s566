@@ -1,17 +1,14 @@
 import random
-from brain_games.cli import game_flow, MAX_NUMBER
+from brain_games.engine import MAX_NUMBER
 
 
-RULES = 'Answer "yes" if number even otherwise answer "no".\n'
+RULES = 'Answer "yes" if number even otherwise answer "no".'
 
 
-def question_generator():
+def get_round():
     number = random.randint(0, MAX_NUMBER)
+
+    question = str(number)
     correct_answer = 'yes' if number % 2 == 0 else 'no'
-    return {
-        'question': str(number),
-        'correct_answer': correct_answer
-    }
 
-
-game = game_flow(RULES, question_generator)
+    return question, correct_answer

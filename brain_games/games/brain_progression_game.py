@@ -1,11 +1,11 @@
 import random
-from brain_games.cli import game_flow, PROGRESSION_NUMBERS_COUNT
+from brain_games.engine import PROGRESSION_NUMBERS_COUNT
 
 
-RULES = 'What number is missing in the progression?.\n'
+RULES = 'What number is missing in the progression?.'
 
 
-def question_generator():
+def get_round():
     start = random.randint(0, PROGRESSION_NUMBERS_COUNT)
     step = random.randint(1, PROGRESSION_NUMBERS_COUNT)
     end = start + step * PROGRESSION_NUMBERS_COUNT
@@ -16,10 +16,5 @@ def question_generator():
 
     progression[hidden_number_index] = '..'
     question = ' '.join(map(str, progression))
-    return {
-        'question': question,
-        'correct_answer': correct_answer
-    }
 
-
-game = game_flow(RULES, question_generator)
+    return question, correct_answer

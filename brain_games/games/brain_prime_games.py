@@ -1,8 +1,8 @@
 import random
-from brain_games.cli import game_flow, NUMBERS_FOR_PRIMES_COUNT
+from brain_games.engine import NUMBERS_FOR_PRIMES_COUNT
 
 
-RULES = 'Answer "yes" if given number is prime. Otherwise answer "no".\n'
+RULES = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 
 def is_prime(n):
@@ -12,16 +12,10 @@ def is_prime(n):
     return True
 
 
-def question_generator():
+def get_round():
     number = random.randint(2, NUMBERS_FOR_PRIMES_COUNT)
 
-    question = '{0}'.format(number)
+    question = str(number)
     correct_answer = 'yes' if is_prime(number) else 'no'
 
-    return {
-        'question': question,
-        'correct_answer': correct_answer
-    }
-
-
-game = game_flow(RULES, question_generator)
+    return question, correct_answer

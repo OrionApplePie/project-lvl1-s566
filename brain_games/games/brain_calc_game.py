@@ -1,29 +1,23 @@
 import operator
 import random
-from brain_games.cli import game_flow, MAX_NUMBER
+from brain_games.engine import MAX_NUMBER
 
 
-RULES = 'What is the result of the expression?\n'
-OPS = {
+RULES = 'What is the result of the expression?'
+OPERATIONS = {
     '+': operator.add,
     '-': operator.sub,
     '*': operator.mul
 }
 
 
-def question_generator():
+def get_round():
     number1 = random.randint(0, MAX_NUMBER)
     number2 = random.randint(0, MAX_NUMBER)
 
-    op = random.choice(list(OPS.keys()))
+    op = random.choice(list(OPERATIONS.keys()))
 
     question = '{0} {1} {2}'.format(number1, op, number2)
-    correct_answer = str(OPS[op](number1, number2))
+    correct_answer = str(OPERATIONS[op](number1, number2))
 
-    return {
-        'question': question,
-        'correct_answer': correct_answer
-    }
-
-
-game = game_flow(RULES, question_generator)
+    return question, correct_answer

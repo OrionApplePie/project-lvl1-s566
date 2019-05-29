@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
-from brain_games.cli import conversation
+from brain_games.engine import make_conversation
 
 
 def main():
-    conversation()
+    make_conversation()
 
 
 if __name__ == "__main__":
