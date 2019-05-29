@@ -24,5 +24,4 @@ You can start the game simply by typing one of the following commands in the ter
 
 ## Example of installation and run games
 
-[![asciicast](https://asciinema.org/a/fqv8KPQPlS7CmjkxPOYSVowt6.svg)](https://asciinema.org/a/fqv8KPQPlS7CmjkxPOYSVowt6)
-
+[![asciicast](https://asciinema.org/a/q062XivkTrJe4UHHVf5pTOYUo.svg)](https://asciinema.org/a/q062XivkTrJe4UHHVf5pTOYUo)
